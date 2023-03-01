@@ -49,7 +49,17 @@ const newsItems = (news) =>{
 }
 
 // Show all Button procedure;
-
+const showAll = async() =>{
+    const url = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-01&sortBy=publishedAt&apiKey=8579cef86cab4dc2af1f112f61a614f9`;
+    try {
+        //  Fetching the Data from this API;
+        const res = await fetch(url);
+        const data = await res.json();
+        newsItems(data.articles);
+    } catch (error) {
+        console.log(error + 'Find the error from this message.')
+    }
+}
 
 // Calling this function;
 newsData();
