@@ -26,15 +26,16 @@ const newsItems = (news) =>{
     news.forEach(teslaNews=>{
         console.log(teslaNews)
         // Destructuring
-        const {author, urlToImage,content,description,title,url} = teslaNews;
+        const {author, urlToImage,content,description,title,url,publishedAt} = teslaNews;
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
         <div class="card h-100">
-          <img src="${urlToImage}" class="card-img-top" alt="...">
+          <img src="${urlToImage ? urlToImage:'../images/credit-uni.png'}" class="card-img-top w-100" alt="...">
           <div class="card-body">
             <h5 class="card-title">${title}</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">${description.slice(0,100)+'......'}</p>
+            <p class="text-body-tertiary">Published at: ${publishedAt}</p>
           </div>
         </div>
         `;
