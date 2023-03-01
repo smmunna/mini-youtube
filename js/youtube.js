@@ -18,6 +18,15 @@ const youtubeData = async () => {
 // Get the items array from this API
 const videoItems = (videoItem) =>{
     console.log(videoItem)
+
+     // Card Main Div
+     const mainDivCard = document.getElementById('mainDivCard');
+
+    //  Get all the Items
+    videoItem.forEach(video=>{
+        console.log(video);
+        
+    })
 }
 
 // Calling this function;
