@@ -55,7 +55,7 @@ const showAll = async() =>{
         //  Fetching the Data from this API;
         const res = await fetch(url);
         const data = await res.json();
-        newsItems(data.articles.slice(7,21));
+        newsItems(data.articles.slice(7,50));
     } catch (error) {
         console.log(error + 'Find the error from this message.')
     }
