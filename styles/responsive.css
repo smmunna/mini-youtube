@@ -6,6 +6,6 @@
 /* For Small and Potrait Mobile Devices */
 @media screen and (max-width:576px) {
     .form-control{
-        /* width: 50vw; */
+        width: 100%;
     }
 }
