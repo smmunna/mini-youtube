@@ -5,17 +5,19 @@ const youtubeData = async () => {
         //  Fetching the Data from this API;
         const res = await fetch(url);
         const data = await res.json();
-        console.log(data);
+        videoItems(data.items);
 
         // Get the regionCode from this Data;
         document.getElementById('regionCode').innerText = data.regionCode;
 
-        // Card Main Div
-        const mainDivCard = document.getElementById('mainDivCard');
-
     } catch (error) {
         console.log(error + 'Find the error from this message.')
     }
+}
+
+// Get the items array from this API
+const videoItems = (videoItem) =>{
+    console.log(videoItem)
 }
 
 // Calling this function;
