@@ -6,6 +6,11 @@ const youtubeData = async () => {
         const res = await fetch(url);
         const data = await res.json();
         console.log(data);
+
+        // Get the regionCode from this Data;
+        document.getElementById('regionCode').innerText = data.regionCode;
+        const mainDivCard = document.getElementById('mainDivCard');
+
     } catch (error) {
         console.log(error + 'Find the error from this message.')
     }
