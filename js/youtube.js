@@ -24,7 +24,7 @@ const newsItems = (news) =>{
 
      // Card Main Div
      const mainDivCard = document.getElementById('mainDivCard');
-
+    mainDivCard.innerHTML ='';
     //  Get all the Items
     news.forEach(teslaNews=>{
         console.log(teslaNews)
@@ -55,7 +55,7 @@ const showAll = async() =>{
         //  Fetching the Data from this API;
         const res = await fetch(url);
         const data = await res.json();
-        newsItems(data.articles);
+        newsItems(data.articles.slice(7,20));
     } catch (error) {
         console.log(error + 'Find the error from this message.')
     }
