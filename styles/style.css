@@ -15,3 +15,8 @@ button.navbar-toggler{
 button.navbar-toggler:focus {
     box-shadow: none;
 }
+
+footer{
+    color: white;
+    background-color: black;
+}
