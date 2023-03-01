@@ -5,7 +5,7 @@ const newsData = async () => {
         //  Fetching the Data from this API;
         const res = await fetch(url);
         const data = await res.json();
-        newsItems(data.articles);
+        newsItems(data.articles.slice(0,6));
 
         // Get the regionCode from this Data;
         //document.getElementById('regionCode').innerText = data.regionCode;
@@ -34,8 +34,9 @@ const newsItems = (news) =>{
           <img src="${urlToImage ? urlToImage:'../images/credit-uni.png'}" class="card-img-top w-100" alt="...">
           <div class="card-body">
             <h5 class="card-title">${title}</h5>
-            <p class="card-text">${description.slice(0,100)+'......'}</p>
+            <p class="card-text">${description? description.slice(0,100)+'......' : '<p class="text-danger">No Description here!</p>'}</p>
             <p class="text-body-tertiary">Published at: ${publishedAt}</p>
+            
           </div>
         </div>
         `;
