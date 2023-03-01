@@ -1,5 +1,10 @@
 
 
+/* Navbar */
+.navbar-brand img{
+    height: 70px;
+    width: 70px;
+}
 .form-control{
     width: 30vw!important;
 }
