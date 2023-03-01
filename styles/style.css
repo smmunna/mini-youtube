@@ -1,6 +1,9 @@
 
 
 /* Navbar */
+.navbar {
+   background:linear-gradient(to bottom, rgba(0, 0, 0, 0.477),rgba(255, 153, 0, 0.107));
+  }
 .navbar-brand img{
     height: 70px;
     width: 70px;
