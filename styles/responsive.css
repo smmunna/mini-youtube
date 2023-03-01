@@ -5,6 +5,9 @@
 
 /* For Small and Potrait Mobile Devices */
 @media screen and (max-width:576px) {
+    .brand-name{
+        font-size: 6vw;
+    }
     .form-control{
         width: 100%;
     }
