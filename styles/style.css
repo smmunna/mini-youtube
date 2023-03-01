@@ -5,15 +5,7 @@
     height: 70px;
     width: 70px;
 }
-.form-control{
-    border: hidden;
-    padding: 12px 0px;
-    width: 30vw;
-}
-.form-control:focus{
-    border: hidden;
-    box-shadow: none;
-}
+
 button.navbar-toggler{
     border: none;
 }
