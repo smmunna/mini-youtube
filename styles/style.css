@@ -14,3 +14,9 @@
     border: hidden;
     box-shadow: none;
 }
+button.navbar-toggler{
+    border: none;
+}
+button.navbar-toggler:focus {
+    box-shadow: none;
+}
