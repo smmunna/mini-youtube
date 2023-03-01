@@ -1,11 +1,11 @@
 // Showing the all data containing to this API;
 const youtubeData = async () => {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCvrh9k-LFww3n5xrbLdiwE09FLDyPRxvU&type=video`;
+    const url = `https://newsapi.org/v2/everything?q=tesla&from=2023-02-01&sortBy=publishedAt&apiKey=8579cef86cab4dc2af1f112f61a614f9`;
     try {
         //  Fetching the Data from this API;
         const res = await fetch(url);
         const data = await res.json();
-        videoItems(data.items);
+        videoItems(data.articles);
 
         // Get the regionCode from this Data;
         document.getElementById('regionCode').innerText = data.regionCode;
@@ -23,10 +23,7 @@ const videoItems = (videoItem) =>{
      const mainDivCard = document.getElementById('mainDivCard');
 
     //  Get all the Items
-    videoItem.forEach(video=>{
-        console.log(video);
-        
-    })
+    
 }
 
 // Calling this function;
