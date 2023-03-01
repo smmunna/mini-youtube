@@ -1,0 +1,9 @@
+/* For Landscape and Large and Tablet Devices */
+@media screen and (min-width:577px) and (max-width:992) {
+    
+}
+
+/* For Small and Potrait Mobile Devices */
+@media screen and (max-width:576px) {
+    
+}
