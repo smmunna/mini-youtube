@@ -6,5 +6,11 @@
     width: 70px;
 }
 .form-control{
-    width: 30vw!important;
+    border: hidden;
+    padding: 12px 0px;
+    width: 30vw;
+}
+.form-control:focus{
+    border: hidden;
+    box-shadow: none;
 }
