@@ -9,6 +9,8 @@ const youtubeData = async () => {
 
         // Get the regionCode from this Data;
         document.getElementById('regionCode').innerText = data.regionCode;
+
+        // Card Main Div
         const mainDivCard = document.getElementById('mainDivCard');
 
     } catch (error) {
