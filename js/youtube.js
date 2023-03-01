@@ -10,6 +10,8 @@ const newsData = async () => {
         // Get the regionCode from this Data;
         //document.getElementById('regionCode').innerText = data.regionCode;
 
+        // 
+
     } catch (error) {
         console.log(error + 'Find the error from this message.')
     }
